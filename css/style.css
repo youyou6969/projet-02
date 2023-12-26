@@ -96,14 +96,86 @@ body {
     position: relative;
     
   }
- 
+ /* autres restaurants*/
 
+  .menu {
+    background-color: #F7F7F7;
+    border-radius: 40px 40px 0 0;
+    filter: drop-shadow(0px 2px 25px rgba(0, 0, 0, 0.1));
+    margin-top: -60px;
+    min-height: calc(100vh - 450px);
+  }
+
+.menu__title{
+    display: flex;
+    gap: 64px;
+}
+
+
+
+  .plats, .menu__title {
+    max-width: 700px;
+    padding-right: 4.5%;
+    margin: auto;
+}
+
+.restaurant__title {
+    font-family: Shrikhand;
+    font-size: 1.7em;
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+}
+
+.plats {
+    padding-top: 5px;
+    padding-bottom: 5px;}
+
+
+    .heart {
+        display: flex;
+        height: 100%;
+    }
+
+    
+  .plats__item {
+    list-style: none;
+    counter-reset: item;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .plats__info {
+    counter-increment: item;
+    background-color: #F7F7F7;
+    font-weight: 500;
+    box-shadow: 0px 4px 13px 1px rgba(0, 0, 0, 0.13);
+    border-radius: 20px;
+    padding: 25px 20px 25px;
+    margin: 0 0 25px 10px;
+    position: relative;}
+    
+
+
+
+
+
+
+
+
+
+
+
+    
   .card {
     filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.15));
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
-    transition: all 0.3s;
+   
   }
 
   .card__new {
@@ -139,6 +211,7 @@ body {
     width: 100%;
     height: 170px;
     object-fit: cover;
+
     border-radius: 15px 15px 0 0;
   }
 
@@ -160,6 +233,7 @@ body {
   }
   .heart__icon {
     font-size: 1.4em;
+
   }
 
   section:last-child {
@@ -193,7 +267,7 @@ body {
   .footer__link {
     text-decoration: none;
     color: #FFFFFF;
-    transition: color 0.2s;
+    
   }
   .footer__link:hover {
     color: #99E2D0;
