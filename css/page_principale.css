@@ -1,0 +1,179 @@
+
+
+
+
+  :root {
+    --main-color: #9356DC;
+    --bg-color: #FF79DA;
+    --filter-bg-color: #99E2D0;}
+
+#test {
+  color: var(--main-color);
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  min-width: 320px;
+ 
+  font-family: "Roboto", sans-serif;
+}
+
+/* Block: header */
+header {
+  max-width: 100%;
+  text-align: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+header  {
+  margin: 0;
+  padding: 10px;
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+}
+.header__title {
+  margin: 0;
+  padding: 10px;
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+}
+
+/* Block: map */
+
+.IconeCity {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background-color: #EAEAEA;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+}
+
+.IconeCity .fa-location-dot {
+  color: black;
+}
+
+.IconeCity input {
+  width: 109px;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* cards */ 
+.Menu_principale {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #F6F6F6;
+  padding-bottom: 45px;
+}
+.Menu_principale h1 {
+  width: 73%;
+  font-size: 24px;
+  display: flex;
+  text-align: center;
+  margin-top: 30px;
+}
+.Menu_principale p {
+  width: 84%;
+  font-size: 16px;
+  text-align: center;
+}
+
+.Menu_principale button {
+  border: 1px solid;
+  width: 58%;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
+  color: white;
+  font-size: 16px;
+  align-self: center;
+}
+.Menu_principale button:hover {
+  background-color: #2980b9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  
+}
+
+/* Block: fonctionnement */
+
+
+.section-fonctionnement {
+  padding: 20px 0;
+}
+
+.section-fonctionnement__title {
+  padding-left: 35px;
+}
+
+.fonctionnement-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.fonctionnement-card {
+  width: 80%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #F3F3F3;
+  min-width: 300px;
+  border-radius: 20px;
+  cursor: default;
+  gap: 20px;
+  box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+.fonctionnement-card:hover {
+  transform: scale(1.1);
+}
+
+.fonctionnement-card-title {
+  position: relative;
+  left: calc(50% - 80px);
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.fonctionnement-card-cercle {
+  position: absolute;
+  left: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #9356DC;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.fonctionnement-card i {
+  position: absolute;
+  left: calc(50% - 120px);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+}
+
+.fonctionnement-card .fa-purple {
+  color: #9356DC;
+}
