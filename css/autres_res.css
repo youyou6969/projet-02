@@ -1,0 +1,191 @@
+
+
+
+body {
+    width: 100%;
+    background: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .header__title {
+    width: 50%;
+    text-align: center;
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Shrikhand", cursive;
+    font-size: 30px;
+  }
+
+  .fa-arrow-left {
+    width: 50px;
+    font-size: 24px;
+    color: black;
+    position: absolute;
+    left: 17px;
+    top: 17px;}
+
+  .restaurants__card-img {
+        height: 250px;
+        object-fit: cover;
+        width: 100%;
+      }
+      .menu {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        margin-bottom: -50px;
+        min-width: 330px;
+        background: #F3F3F3;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+       
+      }
+
+      .menu-card {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background: #FFFFFF;
+        border-radius: 15px;
+        padding-right: 15px;
+        margin-top: 15px;
+      }
+
+      .menu__header-title {
+        width: 100%;
+        font-size: 25px;
+        font-family: "Shrikhand", cursive;
+      }
+      .label_coeur {
+        position: absolute;
+        top: 343px;
+        right: 60px;
+        width: 44; 
+        font-size: 24px;
+      }
+      .menu__section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+      }
+
+      .menu__section--title {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 5px;
+        margin-top: 0;
+        font-family: "Roboto", sans-serif;
+      }
+      .menu__section--separateur {
+        width: 40px;
+        height: 3px;
+        background: #99E2D0;
+      }
+
+       .menu-card__text-container {
+        width: calc(100% - 50px);
+        padding: 10px 15px;
+      }
+
+      .menu-card__text-container h3 {
+        margin: 0;
+        font-size: 18px;
+    
+        font-weight: 511;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .menu-card__text-container p {
+        margin: 5px 0 0;
+        font-size: 14px;
+        font-weight: 300;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .menu-card__price {
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 10px;
+        font-weight: 600;
+        height: 55px;
+        width: 30px;
+        font-family: "Roboto", sans-serif;
+      }
+
+
+
+      .button {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin: 0px 50px 20px 90px;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 50px;
+        background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+        cursor: pointer;
+      }
+
+
+      .footer {
+        padding: 22px 20px 10px 25px;
+        background: #353535;
+        font-family: "Shrikhand", cursive;
+      }
+      
+      .footer__logo a {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 20px;
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+      
+      .footer__nav {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .footer__nav-item {
+        margin-top: 5px;
+        gap: 20px;
+        color: #f6f6f6;
+      }
+      
+      .footer__nav-link {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+      }
+      
+      .footer__nav-link--text1 {
+        margin-left: 10px;
+      }
+      
+      .footer__nav-link--text2 {
+        margin-left: 5px;
+        top: 26px;
+      }
