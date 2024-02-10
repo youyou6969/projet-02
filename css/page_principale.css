@@ -1,15 +1,15 @@
 
 
 
-
   :root {
     --icon-color: #9356DC;
     --bg-color: #FF79DA;
     --nouveau-color: #99E2D0;}
 
-#test {
-  color: var(--main-color);
-}
+/*#test {
+  color: var(icon-color);
+ 
+}*/
 
 body {
   width: 100%;
@@ -157,7 +157,7 @@ header  {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #9356DC;
+  background: var(--icon-color);
   color: #FFFFFF;
   font-weight: 500;
 }
