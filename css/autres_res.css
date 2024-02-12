@@ -51,6 +51,7 @@ body {
         background: #F3F3F3;
         border-top-right-radius: 50px;
         border-top-left-radius: 50px;
+        transform: translateY(-50px);
        
       }
 
@@ -62,6 +63,7 @@ body {
         border-radius: 15px;
         padding-right: 15px;
         margin-top: 15px;
+        
       }
 
       .menu__header-title {
@@ -71,7 +73,7 @@ body {
       }
       .label_coeur {
         position: absolute;
-        top: 343px;
+        top: 43px;
         right: 60px;
         width: 44; 
         font-size: 24px;

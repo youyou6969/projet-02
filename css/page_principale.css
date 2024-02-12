@@ -72,6 +72,7 @@ header  {
 
 /* Menu_principale */ 
 .Menu_principale {
+  margin-bottom: 35px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -80,6 +81,7 @@ header  {
   padding-bottom: 45px;
 }
 .Menu_principale h1 {
+  margin-top: 15px;
   width: 73%;
   font-size: 24px;
   display: flex;
@@ -87,6 +89,7 @@ header  {
   margin-top: 30px;
 }
 .Menu_principale p {
+  margin-bottom: 25px;
   width: 84%;
   font-size: 16px;
   text-align: center;
@@ -243,10 +246,11 @@ header  {
 
 .label_coeur {
   position: absolute;
-  bottom: 28px;
+  bottom: 33px;
   right: 20px;
   width: 44; 
   font-size: 24px;
+  display: flex;
 }
 
 /*  footer */
