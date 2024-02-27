@@ -1,4 +1,11 @@
 
+:root {
+  --icon-color: #9356DC;
+  --bg-color: #FF79DA;
+  --nouveau-color: #99E2D0;
+  --bg: #FFFFFF;
+  --black: #060606;
+  --green: #008766;}
 
 
 body {
@@ -48,7 +55,7 @@ body {
         padding: 15px;
         margin-bottom: -50px;
         min-width: 330px;
-        background: #F3F3F3;
+        background: var(--bg);
         border-top-right-radius: 50px;
         border-top-left-radius: 50px;
         transform: translateY(-50px);
@@ -56,10 +63,11 @@ body {
       }
 
       .menu-card {
+        box-shadow: 0px 8px 10px  rgba(0, 0, 0, 0.2);
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        background: #FFFFFF;
+        background: var(--bg);
         border-radius: 15px;
         padding-right: 15px;
         margin-top: 15px;
@@ -79,6 +87,7 @@ body {
         font-size: 24px;
       }
       .menu__section {
+        
         display: flex;
         flex-direction: column;
         margin-bottom: 40px;
@@ -95,12 +104,14 @@ body {
       .menu__section--separateur {
         width: 40px;
         height: 3px;
-        background: #99E2D0;
+        background: var(--nouveau-color);
       }
 
        .menu-card__text-container {
         width: calc(100% - 50px);
         padding: 10px 15px;
+        
+ 
       }
 
       .menu-card__text-container h3 {
@@ -131,13 +142,14 @@ body {
 
 
       .button {
+        box-shadow: 0px 8px 10px  rgba(0, 0, 0, 0.2);
         width: 40%;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 10px;
         margin: 0px 50px 20px 90px;
-        color: #FFFFFF;
+        color: var(--bg);
         text-decoration: none;
         font-weight: 700;
         border-radius: 50px;
@@ -159,7 +171,7 @@ body {
         font-style: italic;
         font-weight: bold;
         font-size: 20px;
-        color: #FFFFFF;
+        color: var(--bg);
         text-decoration: none;
       }
       
@@ -171,14 +183,14 @@ body {
       .footer__nav-item {
         margin-top: 5px;
         gap: 20px;
-        color: #f6f6f6;
+        color: var(--bg);
       }
       
       .footer__nav-link {
         width: 100%;
         font-size: 16px;
         font-weight: 500;
-        color: #FFFFFF;
+        color:var(--bg);
         text-decoration: none;
         font-family: "Roboto", sans-serif;
       }
