@@ -1,10 +1,10 @@
 
 :root {
   --icon-color: #9356DC;
-  --bg-color: #FF79DA;
+  --button-color: #FF79DA;
   --nouveau-color: #99E2D0;
   --bg: #FFFFFF;
-  --black: #060606;
+  --header-style: #060606;
   --green: #008766;}
 
 
@@ -39,7 +39,7 @@ body {
   .fa-arrow-left {
     width: 50px;
     font-size: 24px;
-    color: black;
+    color:var(--header-style);
     position: absolute;
     left: 17px;
     top: 17px;}
@@ -74,10 +74,15 @@ body {
         
       }
 
+      .menu__header{
+        position: relative;
+      }
+
       .menu__header-title {
         width: 100%;
         font-size: 25px;
         font-family: "Shrikhand", cursive;
+        
       }
       .label_coeur {
         position: absolute;
@@ -203,3 +208,44 @@ body {
         margin-left: 5px;
         top: 26px;
       }
+
+      .checkbox-heart {
+        position: absolute;
+        display: block;
+        z-index: 1;
+        bottom: 5px;
+        right: 5px;
+        appearance: none;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+      }
+      .checkbox-heart + .checkbox-heart__label {
+        position: absolute ;
+        
+        top: 35%;
+        right: 11px;
+        font-size: 25px;
+      }
+      .checkbox-heart + .checkbox-heart__label .fa-regular {
+        position: absolute;
+        top: 35%;
+        right: 11px;
+        opacity: 1;
+        transition: opacity 0.2s ease;
+      }
+      .checkbox-heart + .checkbox-heart__label .fa-solid {
+        position: absolute;
+        top: 35%;
+        right: 11px;
+        background: linear-gradient(0deg, var(--icon-color) -11.44%, var(--button-color) 123.93%);;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform-origin: center;
+        transform: scale(0);
+        transition: transform 0.2s ease-out;
+      }
+       .checkbox-heart:checked + .checkbox-heart__label .fa-solid {
+        transform: scale(1.03);
+      }    
