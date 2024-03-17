@@ -209,6 +209,8 @@ body {
         top: 26px;
       }
 
+      /* heart*/
+
       .checkbox-heart {
         position: absolute;
         display: block;
@@ -221,23 +223,27 @@ body {
         cursor: pointer;
       }
       .checkbox-heart + .checkbox-heart__label {
-        position: absolute ;
-        
-        top: 35%;
-        right: 11px;
+        position: absolute;
+        bottom: 7px;
+        right: 0px;
         font-size: 25px;
       }
       .checkbox-heart + .checkbox-heart__label .fa-regular {
         position: absolute;
-        top: 35%;
-        right: 11px;
+        bottom: 20px;
+        right: 20px;
         opacity: 1;
         transition: opacity 0.2s ease;
       }
+      .checkbox-heart:checked + .checkbox-heart__label .fa-regular {
+        opacity: 0;
+      }
+
+
       .checkbox-heart + .checkbox-heart__label .fa-solid {
         position: absolute;
-        top: 35%;
-        right: 11px;
+        bottom: 20px;
+        right: 20px;
         background: linear-gradient(0deg, var(--icon-color) -11.44%, var(--button-color) 123.93%);;
         -webkit-background-clip: text;
         background-clip: text;
@@ -248,4 +254,7 @@ body {
       }
        .checkbox-heart:checked + .checkbox-heart__label .fa-solid {
         transform: scale(1.03);
-      }    
+      }
+      .checkbox-heart:checked + .checkbox-heart__label .fa-regular {
+        opacity: 0;
+      }
