@@ -161,7 +161,10 @@ body {
         background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
         cursor: pointer;
       }
-
+      .button:hover {
+        cursor: pointer;
+        filter: brightness(1.15);
+    }
 
       .footer {
         padding: 22px 20px 10px 25px;
@@ -257,4 +260,93 @@ body {
       }
       .checkbox-heart:checked + .checkbox-heart__label .fa-regular {
         opacity: 0;
+      }
+
+
+      @media screen and (min-width: 992px) {
+        .menu {
+          width: 50%;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 50px 180px 0 180px;
+        }
+        .fa-arrow-left {
+          top: 25px;
+          transform: scale(1);
+          transition: transform 0.3s ease;
+        }
+        .fa-arrow-left:hover {
+          transform: scale(2);
+        }
+        .header__title {
+          font-size: 35px;
+          margin-bottom: 15px;
+        }
+        .menu__header{
+           
+            justify-content: center;
+            display: flex;
+            margin-left: 171px;
+        }
+
+        .menu__header__title{
+            right: 23rem;
+        }
+
+        .restaurants__card-img {
+          height: 500px;
+        }
+       
+       
+       
+    
+        
+           .checkbox-heart:checked + .checkbox-heart__label .fa-solid {
+            transform: scale(1.03);
+          }
+          .checkbox-heart:checked + .checkbox-heart__label .fa-regular {
+            opacity: 0;
+          }
+        .button {
+          width: 20%;
+          margin-bottom: 35px;
+          padding: 15px;
+          align-self: center;
+        }
+        /* Block: footer */
+        .footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: row-reverse;
+          padding: 30px 25px 10px 25px;
+          font-size: 20px;
+        }
+        .footer__logo a {
+          width: 10%;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          font-size: 1rem;
+          margin-right: 3rem;
+        }
+        .footer__nav {
+          width: 50%;
+          display: flex;
+          margin-left: 30rem;
+          gap: 10px;
+          justify-content: flex-end;
+        }
+        .footer__nav-link {
+          margin: 0;
+          padding: 0;
+        }
+        .footer__nav-link--text1, .footer__nav-link--text2 {
+          margin-left: 5px;
+          margin-right: 0;
+        }
+        .footer__nav-link--text3 {
+          margin-left: 30px;
+          justify-content: space-between;
+        }
       }
