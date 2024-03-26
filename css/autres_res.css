@@ -71,8 +71,14 @@ body {
         border-radius: 15px;
         padding-right: 15px;
         margin-top: 15px;
+        transform: scale(1);
+        transition: transform 0.3s ease;
         
       }
+      .menu-card:hover {
+        transform: scale(1.1); 
+      }
+
 
       .menu__header{
         position: relative;
@@ -263,6 +269,42 @@ body {
       }
 
 
+
+    /* Animation des sections du menu */
+    .first-section {
+        animation-delay: 0.2s;
+    }
+    
+    .second-section {
+        animation-delay: 0.4s;
+    }
+    
+    .third-section {
+        animation-delay: 0.6s;
+    }
+    
+    @keyframes menu-section-in {
+        from {
+        transform: translateX(100vw);
+        }
+        to {
+        transform: translateX(0);
+        }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       @media screen and (min-width: 992px) {
         .menu {
           width: 50%;
@@ -275,9 +317,7 @@ body {
           transform: scale(1);
           transition: transform 0.3s ease;
         }
-        .fa-arrow-left:hover {
-          transform: scale(2);
-        }
+       
         .header__title {
           font-size: 35px;
           margin-bottom: 15px;
@@ -289,16 +329,32 @@ body {
             margin-left: 171px;
         }
 
-        .menu__header__title{
+        /*.menu__header__title{
             right: 23rem;
-        }
+        }*/
+        .heart-label {
+            top: 80px;
+            right: 23rem;
+          }
 
         .restaurants__card-img {
-          height: 500px;
+          height: 250px;
         }
-       
-       
-       
+
+        .checkbox-heart + .checkbox-heart__label {
+            position: relative;
+            bottom: 8px;
+            right: 180px;
+            transform: scale(1);
+            
+        }
+
+
+
+
+
+
+
     
         
            .checkbox-heart:checked + .checkbox-heart__label .fa-solid {
@@ -350,6 +406,16 @@ body {
           justify-content: space-between;
         }
       }
+
+
+
+
+
+
+
+
+
+
  /* Version tablette (min-width: 768px) */
  @media screen and (min-width: 768px) {
 
@@ -363,6 +429,67 @@ body {
         background: #F3F3F3;
         
       }
-      
+      .menu-card{ transform: scale(1);
+        transition: transform 0.3s ease;}
      
- }
+      
+    }
+    .menu-card:hover {
+      transform: scale(1.1); 
+    }
+ 
+
+    .menu-card__checkbox { /*superposer la case à cocher sans affecter*/
+        z-index: 99;
+        position: absolute;     
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        appearance: none;
+      }
+
+      .menu-card__checkbox:checked + .menu-card__text-container {
+        width: calc(100% - 120px);
+      }
+
+    .menu-card__text-container { /*transition en douceur*/
+
+        transition: width 0.5s ease;
+      }
+
+      
+       .menu-card__price { /*pour positionner d'autres éléments*/
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 10px;
+        font-weight: 600;
+        height: 55px;
+        width: 30px;
+        font-family: "Roboto", sans-serif;
+      }
+      
+    .menu-card__price--checkbox-container { 
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -5px;
+        right: -100px;
+        height: 72px;
+        width: 70px;
+        background: var(--nouveau-color);
+      }
+
+      .menu-card__price--checkbox-container .checkbox-circle { /* style de checkbox circle*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        color: #99E2D0;
+      }
+   
+   
