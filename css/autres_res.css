@@ -350,3 +350,19 @@ body {
           justify-content: space-between;
         }
       }
+ /* Version tablette (min-width: 768px) */
+ @media screen and (min-width: 768px) {
+
+    .button {
+        width: 20%;
+        margin: 0 auto 20px;
+        align-self: center;
+      }
+      .menu {
+  
+        background: #F3F3F3;
+        
+      }
+      
+     
+ }

@@ -542,3 +542,47 @@ header  {
     justify-content: space-between;
   }
   }
+
+  /* Version tablette (min-width: 768px) */
+@media screen and (min-width: 768px) {
+    .Menu_principale {
+        font-size: 16.5px;
+        background-color:  #f4f3f3;
+    }
+   
+    .Menu_principale p{
+        font-size: 16.5px;
+    }
+
+    .Menu_principale h1{
+        display: flex;
+        justify-content: center;
+    }
+    .fonctionnement-card {
+        width: 100%;
+        background-color:  #f4f3f3;
+      }
+      .section-fonctionnement__title {
+        padding-left: 60px;
+      }
+      .fonctionnement-card-title {
+        left: 70px;
+      }
+      .fonctionnement-card i {
+        left: 30px;
+      }
+      .fonctionnement-container {
+        padding-left: 70px;
+      }
+    /* Block: restaurants */
+    #restaurants {
+        padding: 10px 20px 50px 20px;
+        background-color:  #f4f3f3;
+      }
+    }
+    .restaurants__title {
+        padding-left: 20px;
+    }
+
+ 
+   
